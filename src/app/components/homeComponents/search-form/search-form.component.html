@@ -1,0 +1,22 @@
+<div class="card text-white bg-primary mb-3 " style="max-width: 30rem;">
+    <div class="card-header" style="text-align: center;">Search</div>
+    <div class="card-body">
+     <form (ngSubmit)="onSearch()" >
+        <div class="d-flex justify-content-between">
+            <div class="form-group" style="width: 80%;">
+                <input type="Text" 
+                class="form-control" 
+                id="exampleInputEmail1" 
+                name="Name"
+                [(ngModel)]="Name"
+                aria-describedby="emailHelp" 
+                placeholder="Search ....">
+              </div>
+              &nbsp;
+              &nbsp;
+              <button type="submit" class="btn btn-dark" style="height: 40px;">
+                <i class="bi bi-search" style="color: white; position: relative; left:-25px ; top: 3px;"></i> &nbsp; <span style="font-size: 17px ; color: white; position: relative; top: -23px; right: -10px;">  Search</span></button>
+        </div>
+     </form>
+    </div>
+  </div>

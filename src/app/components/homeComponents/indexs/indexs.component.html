@@ -1,0 +1,7 @@
+<div class="btn-group me-2" role="group" aria-label="First group">
+    <button *ngIf="showfirst" (click)="passidx(1)" type="button" class="btn btn-secondary">1</button>
+    <i *ngIf="showfirst" class="bi bi-three-dots" style="font-size: 40px;"></i> 
+    <button *ngFor="let id of indixs" (click)="passidx(id)" type="button" class="btn btn-secondary">{{id+1}}</button>
+     <i *ngIf="showFinal" class="bi bi-three-dots" style="font-size: 40px;"></i> 
+    <button *ngIf="showFinal" (click)="passidx(finalindx)" type="button" class="btn btn-secondary">{{finalindx}}</button>
+ </div>
